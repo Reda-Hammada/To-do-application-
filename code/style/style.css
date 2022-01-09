@@ -11,3 +11,29 @@
 
     --universal-font: 'Roboto', sans-serif;
 }
+
+.todoContainer{
+
+    font-family: var(--universal-font);
+    background-image: url(/images/bg-desktop-light.jpg);
+    width: 100%;
+    
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todo h1{
+    color: #fff;
+    font-weight: bolder;
+}
+
+.todo img{
+    margin-top: 20px;
+    cursor: pointer;
+}
