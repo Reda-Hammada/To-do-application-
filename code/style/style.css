@@ -40,3 +40,8 @@
     margin-top: 20px;
     cursor: pointer;
 }
+
+#sun {
+
+    display: none;
+}

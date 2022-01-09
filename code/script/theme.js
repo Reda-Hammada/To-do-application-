@@ -7,7 +7,8 @@ function darkTheme(){
     if(moon.click){
         document.body.style.backgroundColor = "hsl(235, 21%, 11%)";
         document.querySelector('.todoContainer').style.backgroundImage = "url(/images/bg-desktop-dark.jpg)";
-        removeSun();
+        showSun();
+        removeMoon();
     }
     
 };
@@ -19,27 +20,39 @@ function lightTheme(){
 
         document.body.style.backgroundColor = "white";
         document.querySelector('.todoContainer').style.backgroundImage = "url(/images/bg-desktop-light.jpg)";
-        removeMoon();
+        showMoon();
+        removeSun();
         
     }
 
 }
 
-// remove the moon 
+// show and hide the sun 
+function showSun(){
+
+let _sun = document.querySelector('#sun');
+_sun.style.display = "flex";
+
+};
+
 function removeSun(){
 
-    let childElem = document.getElementById("moon");
-    childElem.parentNode.removeChild(childElem);
+    let _sun = document.querySelector('#sun');
+    _sun.style.display = "none";
+}
+
+// show and hide the moon
+
+function removeMoon(){
+
+    let _moon = document.querySelector('#moon');
+    _moon.style.display = "none";
     
 }
 
-// remove the sun 
-function removeMoon(){
-
-    let childElem = document.getElementById('sun');
-    childElem.parentNode.removeChild(childElem);
+function showMoon(){
+    let _moon = document.querySelector('#moon');
+    _moon.style.display = "flex";
 }
-
-
 
 
