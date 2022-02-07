@@ -16,15 +16,16 @@
                     <h1>TO DO</h1>
                 </div>
                 <div class="themButtonContainer">
-                    <img id="moon" onclick="darkTheme()" src="/images/icon-moon.svg" alt="dark theme button">
-                    <img id="sun" onclick="lightTheme()" src="/images/icon-sun.svg">
+                    <img id="moon" onclick="darkTheme()" src="../images/icon-moon.svg" alt="dark theme button">
+                    <img id="sun" onclick="lightTheme()" src="../images/icon-sun.svg">
                 </div>
             </div>
            
         </section>
         <section>
             <div>
-                <input type = "text">
+                <input id="typeTask" type = "text">
+                <button id="taskButton" onclick="pushArray()">add</button>
             </div>
         
         </section>
@@ -36,6 +37,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a target="_blank" href="https://hammada-reda.com/">Reda Hammada</a>.
   </div>
+  <script src="script/app.js"></script>
   <script src="script/theme.js"></script>
 </body>
 </html>
