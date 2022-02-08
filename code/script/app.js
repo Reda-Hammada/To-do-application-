@@ -4,6 +4,7 @@ function addTask(){
 
  tasks = readTask();
  pushArray();
+ insertTask();
 
 
 
@@ -27,8 +28,15 @@ function pushArray(){
 
 function insertTask(){
     for(i=0; i < taskList.length; i++){
-         tasksContainer = document.getElementsByClassName('tasks-container');
-          task = tasksContainer.document.createElement('div');
+        let Elem;
+        taskContainer = document.getElementsByClassName('tasks-container');
+        taskContainer.Elem = document.createElement('p');
+         Elem.textContent = "this is a test";
+        console.log(taskList[i]);
     }
+        while(taskList.length > 0){
+            taskList = [];
+        }
+    
 }
 
