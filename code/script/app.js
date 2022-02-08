@@ -1,17 +1,14 @@
 let taskList = [];
-let _readTask = readTask();
-pushArray();
+
+function addTask(){
+
+ tasks = readTask();
+ pushArray();
 
 
 
 
-
-
-
-
-
-
-
+}
 
 function readTask(){
 
@@ -24,14 +21,13 @@ function readTask(){
 
 function pushArray(){
     
-    taskList.push(_readTask);
+    taskList.push(tasks);
 
 }
 
-
-function insert(){
-    
-    for(i=0; i<taskList.length; i++){
+function insertTask(){
+    for(i=0; i < taskList.length; i++){
         
     }
 }
+
