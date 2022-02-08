@@ -27,7 +27,8 @@ function pushArray(){
 
 function insertTask(){
     for(i=0; i < taskList.length; i++){
-        
+         tasksContainer = document.getElementsByClassName('tasks-container');
+          task = tasksContainer.document.createElement('div');
     }
 }
 
