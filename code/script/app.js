@@ -1,4 +1,5 @@
 let taskList = [];
+let  content;
 
 function addTask(){
 
@@ -29,9 +30,10 @@ function insertTask(){
    
     for(i=0; i < taskList.length; i++){
          
-        content = document.createTextNode(taskList[i])
-        Elem.innerHTML = taskList[i];
-        document.body.appendChild(Elem);
+       
+        content = `<input type="checkbox >
+                    <label>${taskList[i]}</label>`;
+        taskContainer.insertAdjacentHTML('beforeend',content);
         
     }
     

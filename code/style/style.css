@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
+
 * {
 
     margin: 0;
@@ -10,12 +11,21 @@
 :root{
 
     --universal-font: 'Josefin Sans', sans-serif;
+    --backround-color: hsla(236, 33%, 92%, 1);
+    --tasks-container-color: hsl(0, 0%, 98%);
+    
+
+}
+
+body {
+
+    background-color: var(--tasks-container-color);
 }
 
 .todoContainer{
 
     font-family: var(--universal-font);
-    background-image: url("../images/bg-desktop-light.jpg");
+    background-image: url(/images/bg-desktop-dark.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
