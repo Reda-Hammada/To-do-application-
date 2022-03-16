@@ -19,7 +19,7 @@ function lightTheme(){
     if(sun.click){
 
         document.body.style.backgroundColor = "white";
-        document.querySelector('.todoContainer').style.backgroundImage = "url(../images/bg-desktop-light.jpg)";
+        document.querySelector('.todoContainer').style.backgroundImage = "url(../images/bglight.jpg)";
         showMoon();
         removeSun();
         

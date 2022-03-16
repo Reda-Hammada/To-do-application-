@@ -22,10 +22,12 @@ body {
     background-color: var(--tasks-container-color);
 }
 
+/* background image and header */
+
 .todoContainer{
 
     font-family: var(--universal-font);
-    background-image: url(/images/bg-desktop-dark.jpg);
+    background-image: url('/images/bglight.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -36,7 +38,7 @@ body {
 .todo {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -55,3 +57,24 @@ body {
 
     display: none;
 }
+
+
+
+.insertTaskContainer{
+
+    width: 100%;
+   text-align: center;
+   margin-top: 10%;
+}
+
+.insertTaskContainer #typeTask{
+ 
+    width:  30%;
+    height: 35px;
+    color: var(--tasks-container-color);
+    background-color: var(--tasks-container-color);
+    border: hidden 1px #fff;
+    border-radius: 4px;
+   
+}
+
