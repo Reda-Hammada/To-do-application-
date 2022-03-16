@@ -26,14 +26,12 @@ function pushArray(){
 function insertTask(){
     taskContainer = document.getElementById('tasks-container');
     Elem = document.createElement('div');
+    
 
    
     for(i=0; i < taskList.length; i++){
-         
-       
-        content = `<input type="checkbox >
-                    <label>${taskList[i]}</label>`;
-        taskContainer.insertAdjacentHTML('beforeend',content);
+           
+
         
     }
     

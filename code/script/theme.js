@@ -5,7 +5,7 @@ function darkTheme(){
      
 
     if(moon.click){
-        document.body.style.backgroundColor = "hsl(235, 21%, 11%)";
+        document.body.style.backgroundColor = "var(--tasks-container-dark-theme )";
         document.querySelector('.todoContainer').style.backgroundImage = "url(../images/bg-desktop-dark.jpg";
         showSun();
         removeMoon();
@@ -16,6 +16,7 @@ function darkTheme(){
 function lightTheme(){
 
     let sun = document.getElementById('sun');
+    
     if(sun.click){
 
         document.body.style.backgroundColor = "white";

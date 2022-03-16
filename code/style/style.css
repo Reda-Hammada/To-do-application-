@@ -13,7 +13,10 @@
     --universal-font: 'Josefin Sans', sans-serif;
     --backround-color: hsla(236, 33%, 92%, 1);
     --tasks-container-color: hsl(0, 0%, 98%);
-    
+    --insert-button: hsl(236, 33%, 92%);
+    --dark-theme-color:  hsl(233, 14%, 35%);
+    --tasks-container-dark-theme :  hsla(237, 14%, 26%, 1);
+
 
 }
 
@@ -32,6 +35,7 @@ body {
     background-size: cover;
     width: 100%;
     height: 300px;
+    max-height: 350px;
     
 }
 
@@ -59,22 +63,51 @@ body {
 }
 
 
-
-.insertTaskContainer{
+.insertTask{
 
     width: 100%;
    text-align: center;
-   margin-top: 10%;
+   margin-top: 5%;
 }
 
-.insertTaskContainer #typeTask{
+.insertTask #typeTask{ /* add bar */
  
     width:  30%;
     height: 35px;
-    color: var(--tasks-container-color);
     background-color: var(--tasks-container-color);
     border: hidden 1px #fff;
     border-radius: 4px;
+    padding-left: 3%;
    
 }
 
+.insertTask #addButton{ /* insert task button */
+    height: 35px;
+    width:120px;
+    border: hidden 1px #fff;
+    border-radius: 4px;
+    background-color: var(--tasks-container-color);
+    cursor: pointer;
+    background-color: var(--insert-button);
+
+
+}
+
+#typeTask:focus {
+
+    outline: none;
+}
+
+
+/* tasks */
+
+.task {
+
+    width:  30%;
+    height: 35px;
+    background-color: var(--tasks-container-color);
+    border: hidden 1px #fff;
+    border-radius: 4px;
+    padding-left: 3%;
+
+}
