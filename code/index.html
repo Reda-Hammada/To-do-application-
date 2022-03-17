@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel= "stylesheet" href="style/normalize.css">
-  <link rel="stylesheet" href="style/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/normalize.css">
+  <link rel = "stylesheet" href="./style/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
   <title>Frontend Mentor | To do app</title>  
 </head>
 <body>
@@ -16,18 +16,22 @@
                     <h1>TO DO</h1>
                 </div>
                 <div class="themButtonContainer">
-                    <img id="moon" onclick="darkTheme()" src="./images/icon-moon.svg" alt="dark theme button">
-                    <img id="sun" onclick="lightTheme()" src="./images/icon-sun.svg">
+                    <img id="moon" onclick="darkTheme()" src="../images/icon-moon.svg" alt="dark theme button">
+                    <img id="sun" onclick="lightTheme()" src="../images/icon-sun.svg">
                 </div>
             </div>
            
         </section>
         <section>
             <div>
-                <input type = "text">
+                <input id="typeTask" type = "text">
+                <button id="taskButton" onclick="addTask()">add</button>
             </div>
-        
+            <div id="tasks-container">
+                
+            </div>
         </section>
+    
     </main>
 
  
@@ -36,6 +40,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a target="_blank" href="https://hammada-reda.com/">Reda Hammada</a>.
   </div>
+  <script src="script/app.js"></script>
   <script src="script/theme.js"></script>
 </body>
 </html>
