@@ -10,6 +10,7 @@
 </head>
 <body>
     <main>
+        <!-- insert task section -->
         <section class="todoContainer">
             <div class="todo">
                 <div>
@@ -21,16 +22,22 @@
                 </div>
             </div>
            
-        </section>
-        <section>
-            <div>
-                <input id="typeTask" type = "text">
-                <button id="taskButton" onclick="addTask()">add</button>
-            </div>
-            <div id="tasks-container">
+       
+            <div class="insertTask">
+                <input id="typeTask" type = "text" placeholder="Create a new todo...">
+                <input id="addButton" onclick= addTask() type="button" value = "Add new todo">
                 
+               
             </div>
+
+            <!-- tasks container -->
+            <div class="tasksContainer">
+
+            </div>
+           
         </section>
+     
+
     
     </main>
 
