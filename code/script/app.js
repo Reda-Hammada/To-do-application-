@@ -1,5 +1,4 @@
 let taskList = [];
-let  content;
 
 function addTask(){
 
@@ -23,21 +22,41 @@ function pushArray(){
 
 }
 
-function insertTask(){
-    taskContainer = document.getElementById('tasks-container');
+function insertTask(){  
+
+
     Elem = document.createElement('div');
     
+     let task = document.getElementById('typeTask').value;
+
 
    
     for(i=0; i < taskList.length; i++){
-           
 
+      
+       let task = document.getElementById('typeTask').value;
+        if(task.value == null){
+
+          taskContainer = document.getElementById('tasksContainer');
+          Elem.innerHTML = taskList[i] ; 
+          taskContainer.insertAdjacentElement('beforeend', Elem);
+          Elem.classList.add('task');
+        }
+
+         
         
+    
+
+          
+       };
+      
+
+     
     }
     
        
     
-}
+
 
 function reset(){
 
