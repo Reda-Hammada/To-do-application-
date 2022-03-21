@@ -30,7 +30,7 @@ body {
 .todoContainer{
 
     font-family: var(--universal-font);
-    background-image: url('/images/bglight.jpg');
+    background-image: url('/code/images/bg-desktop-light.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
