@@ -1,5 +1,5 @@
 let taskList = [];
-let  content;
+let check;
 
 function addTask(){
 
@@ -23,21 +23,48 @@ function pushArray(){
 
 }
 
-function insertTask(){
-    taskContainer = document.getElementById('tasks-container');
+function insertTask(){  
+
     Elem = document.createElement('div');
     
+     let task = document.getElementById('typeTask').value;
 
-   
     for(i=0; i < taskList.length; i++){
-           
 
+        if(task){
+
+          taskContainer = document.getElementById('tasksContainer');
+           checkInput =`<input id="check"  type="checkbox">`;
+          Elem.innerHTML = checkInput + taskList[i] ; 
+          taskContainer.insertAdjacentElement('beforeend', Elem);
+          Elem.classList.add('task');
+           
+        }
+
+        else {
+
+          if(task.value == null){
+          
+          document.querySelector('#typeTaks:focus').style.outlineColor = red;
+
+        }
         
-    };
+        }
+
+         
+        
+    
+
+          
+       };
+      
+
+     
+    }
     
        
     
-};
+
 
 function reset(){
 
