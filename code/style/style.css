@@ -96,7 +96,7 @@ body {
 
 #typeTask:focus {
 
-    outline: none;
+    outline-color: green;
 }
 
 
@@ -130,7 +130,8 @@ body {
 input[type="checkbox"] {
 
     margin-right: 5%;
-    border: solid 1px black;
+    accent-color: blue
+
 
 }
   
