@@ -55,5 +55,4 @@ function insertTask(){
 function reset(){
 
     document.getElementById('typeTask').value = "";
-}
-
+};
