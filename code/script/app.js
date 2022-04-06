@@ -1,6 +1,6 @@
 // add a task dynamically 
 
-let taskList = [];
+const taskList = [];
 let check;
 
 // executes all the function below to add the task 
@@ -28,9 +28,22 @@ function pushArray(){
 
 }
 
+
+// count data in array 
+count = () => {
+
+    for(i=0; i<taskList.length; i++){
+
+        return taskList.length;
+    }
+}
 // insert the task through looping over the array and insert it into the div
 function insertTask(){  
 
+    count();
+     
+
+    
     Elem = document.createElement('div');
     
      let task = document.getElementById('typeTask').value;
@@ -39,20 +52,28 @@ function insertTask(){
 
         if(task){
 
-          taskContainer = document.getElementById('tasksContainer');
-          checkInput =`<input id="check"  type="checkbox">`;
+          taskContainer = document.getElementById('tasksContainer');// task container 
+          checkInput =`<input id="check"  type="checkbox">`;//  content of task container div
           Elem.innerHTML = checkInput + taskList[i] ; 
           taskContainer.insertAdjacentElement('beforeend', Elem);
-          Elem.classList.add('task');
-           
+          Elem.classList.add('task');  //adding style to task container content 
+          
+          
+          
         }
+ 
+
+
 
         
-       }
+    }
 }
+
+
 
 // reset the input value to empty 
 function reset(){
 
     document.getElementById('typeTask').value = "";
 };
+
