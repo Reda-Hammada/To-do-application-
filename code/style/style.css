@@ -122,6 +122,9 @@ body {
     border-bottom: solid 1px gray;
     padding-top: 10px;
     border-bottom-left-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
 
 }
 
